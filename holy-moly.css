@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background: rgb(218, 203, 203);
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  nav {
+    display: flex;
+    
+  }
+  
+  header a {
+    font-size: 20px;
+    margin-left: 12px;
+    color: rgb(212, 46, 46);
+    font-weight: bold;
+    padding: 4px 8px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  header .hamburger {
+    display: none;
+  }
+  
+  /* Main */
+  main { 
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+  
+  .card {
+    font-size: 16px;
+    flex: 0 0 300px;
+    font-family: sans-serif;
+    margin: 12px;
+    background: rgb(142, 122, 165);
+  }
+  
+  .card h3 {
+    font-size: 1.5em;
+    padding: 8px 12px;
+    border-bottom: 1px solid white;
+    background: rgb(89, 89, 131);
+  }
+  
+  .card p {
+    font-size: 1.25em;
+    padding: 8px 12px;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgb(145, 91, 182);
+    padding: .5em .3em;
+    text-align: center;
+    text-decoration-color: aliceblue;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header nav {
+      display: none;
+    }
+  
+    header .hamburger {
+      display: block;
+    }
+  
+    .card {
+      margin: 18px 6px;
+      flex-basis: calc(100% - 36px);
+      font-size: 24px;
+    }
+  }

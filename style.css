@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+
+    border: 1px solid black;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    box-sizing: border-box;
+
+}
+
+main {
+    display: flex;
+    flex: 1px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    font-size: 20px;
+    color: black;
+}
+
+aside {
+    flex: 0px 0px somewidth;
+
+}
+
+a{
+    text-decoration: solid;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+}
